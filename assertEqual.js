@@ -1,8 +1,8 @@
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
-    return console.log("✅✅✅ Assersion Passed: [" + actual + "] === [" + expected + "]");
+    return console.log(`✅✅✅ Assersion Passed: [${actual}] === [${expected}]`);
   } else {
-    return console.log("🛑🛑🛑 Assersion Failed: [" + actual + "] !== [" + expected + "]");
+    return console.log(`🛑🛑🛑 Assersion Failed: [${actual}] === [${expected}]`);;
   }
 };
 // TEST CODE
