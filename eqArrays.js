@@ -10,13 +10,13 @@ const eqArrays = (firstArray, secondArray) => {
 
 //Filtering of array on unevent length
   if (firstArray.length != secondArray.length){
-    return console.log('Fail')
+    return false
   }
   for (let i = 0; i < firstArray.length ; i++) {
     if (firstArray[i] !== secondArray[i]) {
-      return console.log('Fail')
+      return false
     } else {
-      return console.log('Pass')
+      return true
     }
   } 
 }
