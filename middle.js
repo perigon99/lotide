@@ -24,20 +24,21 @@ const middle = (input) => {
     centerIndex = (centerIndex / 2);
     center.push(input[centerIndex -1]);
     center.push(input[centerIndex]);
-    return console.log(center);
+    return center;
   }
   if (input.length % 2 !== 0){
     let centerIndex = input.length;
     centerIndex = (centerIndex / 2) - 0.5;
     
     center.push(input[centerIndex]);
-     return console.log(center);
+     return center;
   } else {
-     return console.log(center);
+     return center;
   }
 };
 
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+assertArrayEqual(eqArrays(middle([1, 2, 3]), [2])) // => [2]
+assertArrayEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3])) 
+assertArrayEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3])) 
+assertArrayEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4])) 
+assertArrayEqual(eqArrays(middle([1, 6]), [3, 4])) 
