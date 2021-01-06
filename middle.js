@@ -41,4 +41,4 @@ assertArrayEqual(eqArrays(middle([1, 2, 3]), [2])) // => [2]
 assertArrayEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3])) 
 assertArrayEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3])) 
 assertArrayEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4])) 
-assertArrayEqual(eqArrays(middle([1, 6]), [3, 4])) 
+assertArrayEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4])) 
