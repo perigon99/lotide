@@ -37,6 +37,14 @@
        return center;
     }
   };
+
+  const assertEqual = (actual, expected) => {
+    if (actual == expected) {
+      return console.log(`✅✅✅ Assersion Passed: [${actual}] === [${expected}]`);
+    } else {
+      return console.log(`🛑🛑🛑 Assersion Failed: [${actual}] === [${expected}]`);;
+    }
+  };
 // }
 
-module.exports = { assertArrayEqual, middle, eqArrays }
+module.exports = { assertArrayEqual, middle, eqArrays, assertEqual }
