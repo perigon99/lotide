@@ -33,18 +33,19 @@ const countOnly = (allItems, itemsToCount) => {
   // result.count = 0
 
   for (let item of allItems) {
-    // if (item === itemsToCount[item]) {
-    //   // result += 1
-    //   // result.count ++
-    // }
+   
+    // if should count item
     if (itemsToCount[item]){
-    if (result[item] !== undefined) {
-      result[item] += 1
-    } else {
-      result[item] = 1
+      // if item has already been added to results
+      if (result[item] !== undefined) {
+        result[item] += 1
+      // item is not in results so set it to one
+      } else { 
+        result[item] = 1
+      }
     }
   }
-}
+
   console.log('result', result)
   return result;
 }
