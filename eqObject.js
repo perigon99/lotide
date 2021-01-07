@@ -38,18 +38,18 @@ const eqObjects = (object1, object2) => {
   keyOfObject1.sort();
   keyOfObject2.sort(); 
   if (keyOfObject1.length !== keyOfObject2.length){
-    return console.log(`🛑🛑🛑 Assersion Failed: [${keyOfObject1}] !== [${keyOfObject2}]`); 
+    return false; 
   } 
     for (let i =0; i < keyOfObject1.length; i++){
       // console.log("first for")
       if (keyOfObject1[i] === keyOfObject2[i]) {
         // console.log("second if")
         if (!eqArrays(object1[keyOfObject1[i]], object2[keyOfObject2[i]])){
-          return console.log(`🛑🛑🛑 Assersion Failed: [${keyOfObject1}] === [${keyOfObject2}]`);
+          return false;
         }  
       } 
     } 
-    return console.log(`✅✅✅ Assersion Passed: [${keyOfObject1}] === [${keyOfObject2}]`);
+    return true;
 }
 
 // const ab = { a: "1", b: "2" };
