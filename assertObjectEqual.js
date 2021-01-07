@@ -45,3 +45,5 @@ assertObjectsEqual(ab, ba); // => true
 
 // ✅✅✅ Assertion Passed: [object Object] === [object Object]
 // 🛑🛑🛑 Assertion Failed: [object Object] !== [object Object]
+
+//assertEqualObjects(eqObject({a: 1, b:2}, {a: 1, b:2}), true)
