@@ -45,6 +45,14 @@
       return console.log(`🛑🛑🛑 Assersion Failed: [${actual}] === [${expected}]`);;
     }
   };
+
+  const map = (array, callback) => {
+    result = []
+    for (let item of array) {
+      result.push(callback(item))
+    }
+    return result;
+  }
 // }
 
-module.exports = { assertArrayEqual, middle, eqArrays, assertEqual }
+module.exports = { assertArrayEqual, middle, eqArrays, assertEqual, map }
